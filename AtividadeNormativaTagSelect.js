@@ -6,7 +6,7 @@ for (var i = 0; i < selects.length; i++) {
     var options = selects[i].getElementsByTagName('option');
     
     // Verifica se há opções dentro da tag <select>
-    if (options.length > 0) {
+    if (selects[i].value === '') {
         // Obtém a última opção dentro da tag <select>
         var ultimaOpcao = options[options.length - 1];
         
